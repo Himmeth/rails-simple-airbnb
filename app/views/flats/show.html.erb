@@ -1,0 +1,33 @@
+
+<div class="col-8">
+  <div class="info-card">
+    <h4><%= @flat.name %></h4>
+    <p><%= @flat.address %></p>
+  </div>
+
+  <div class="description-card">
+    <h4>More about this flat...</h4>
+    <p><%= @flat.description %></p>
+  </div>
+</div>
+
+<div class="col-4">
+  <div class="booking">
+
+  </div>
+
+  <div class="flat-content">
+    <div class="flat-flex">
+      <p><i class="fas fa-users"></i>  <%= @flat.number_of_guests %></p>
+      <p><i class="fas fa-dollar-sign"></i>  <%= @flat.price_per_night %></p>
+    </div>
+  </div>
+
+  <div class="social-box">
+    <p><%= link_to 'Info', '#' %></p>
+    <p><%= link_to 'Change', '#' %></p>
+    <p><%= link_to 'Delete', '#' %></p>
+  </div>
+</div>
+
+
